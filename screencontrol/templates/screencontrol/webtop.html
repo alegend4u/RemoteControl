@@ -1,0 +1,22 @@
+{% load static %}
+
+<html lang="en">
+	<head>
+		<title>WebTop</title>
+		<style>
+			img {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				min-width: 100%;
+				min-height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<img id="bg" src="{% url "video-feed" %}" alt="Video Feed Here.">
+		<script src="{% static "screencontrol/js/getinput.js" %}"></script>
+	</body>
+</html>
